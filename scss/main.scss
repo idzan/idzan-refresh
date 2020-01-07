@@ -1,0 +1,39 @@
+// SCSS for Personal Web Site
+// Colors
+$primary: #393E46;
+$text: #eeeeee;
+$secondary: #222831;
+$button: #00ADB5;
+// Cookie Consent CSS
+@import "external/cookieconsent.scss";
+// Main
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: $primary;
+    color: $text;
+}
+// Cover for homepage
+.cover {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.headline {
+    grid-row: 3;
+    grid-column: 2 / 5;
+    text-align: center;
+    align-self: center;
+    align-self: end;
+}
+.subheading {
+    grid-row: 4;
+    grid-column: 2 / 5;
+    text-align: center;
+}
